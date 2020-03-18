@@ -6,7 +6,7 @@
 # It is included in the main 'build.ninja'.
 
 # =============================================================================
-# Project: hello_world
+# Project: ch3
 # Configuration: Debug
 # =============================================================================
 # =============================================================================
@@ -22,18 +22,18 @@ rule CUSTOM_COMMAND
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__hello_world.2eexc
+rule CXX_COMPILER__ch3.2eexc
   depfile = $DEP_FILE
   deps = gcc
-  command = /usr/bin/g++-5  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = /usr/bin/x86_64-linux-gnu-g++-5  $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building CXX object $out
 
 
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__hello_world.2eexc
-  command = $PRE_LINK && /usr/bin/g++-5  $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
+rule CXX_EXECUTABLE_LINKER__ch3.2eexc
+  command = $PRE_LINK && /usr/bin/x86_64-linux-gnu-g++-5  $FLAGS  $LINK_FLAGS $in  -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
 
@@ -42,7 +42,7 @@ rule CXX_EXECUTABLE_LINKER__hello_world.2eexc
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /usr/local/bin/cmake -S/home/mark/thinkspace/cpp/code/helloworld -B/home/mark/thinkspace/cpp/code/helloworld/build
+  command = /usr/local/bin/cmake -S/home/mark/thinkspace/cpp/code/ch3 -B/home/mark/thinkspace/cpp/code/ch3/build
   description = Re-running CMake...
   generator = 1
 

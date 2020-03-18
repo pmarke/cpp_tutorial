@@ -87,12 +87,62 @@ A compiler translates source code into object code, and a linker links object
 \end_layout
 
 \begin_layout Section
+Initialization
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+// The {}-list notation checks for narrowing conversion.
+\end_layout
+
+\begin_layout Plain Layout
+
+double x = 2.0;
+\end_layout
+
+\begin_layout Plain Layout
+
+char y {x};      // Compile error due to narrowing conversion.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+// However, this is ok.
+\end_layout
+
+\begin_layout Plain Layout
+
+bool b = true;
+\end_layout
+
+\begin_layout Plain Layout
+
+char y {b};     // The memory size of y is greater than or equal to the
+ memory size of b.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
 Code Layout
 \end_layout
 
 \begin_layout Standard
 \align left
-
 \begin_inset listings
 lstparams "language={C++},basicstyle={\tiny},keywordstyle={\color{blue}},commentstyle={\color{magenta}\itshape},emphstyle={\color{red}},breaklines=true,basicstyle={\ttfamily},stringstyle={\color{green}},identifierstyle={\color{cyan}}"
 inline false
@@ -111,6 +161,69 @@ status open
 \begin_layout Plain Layout
 
 #include "header_files.h" // The next lines create the "#include directive."
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+int main () {
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+type var_name; // variable names should be lowercase and words separated
+ by the underscore.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+return 0;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+// Initial capital letter for types we define to distinguish them from the
+ standard
+\end_layout
+
+\begin_layout Plain Layout
+
+// Library types.
+\end_layout
+
+\begin_layout Plain Layout
+
+class Foo {
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+};
 \end_layout
 
 \end_inset

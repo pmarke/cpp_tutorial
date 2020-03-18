@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/home/mark/thinkspace/cpp/code/helloworld/build",
-  "command": "/usr/bin/g++-5    -g   -o CMakeFiles/hello_world.exc.dir/src/main.cpp.o -c /home/mark/thinkspace/cpp/code/helloworld/src/main.cpp",
-  "file": "/home/mark/thinkspace/cpp/code/helloworld/src/main.cpp"
-}
-]

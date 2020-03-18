@@ -78,12 +78,20 @@ Standards
 \end_layout
 
 \begin_layout Section
+Notes
+\end_layout
+
+\begin_layout Standard
+A compiler translates source code into object code, and a linker links object
+ code into an executable file.
+\end_layout
+
+\begin_layout Section
 Code Layout
 \end_layout
 
 \begin_layout Standard
 \align left
-
 \begin_inset listings
 lstparams "language={C++},basicstyle={\tiny},keywordstyle={\color{blue}},commentstyle={\color{magenta}\itshape},emphstyle={\color{red}},breaklines=true,basicstyle={\ttfamily},stringstyle={\color{green}},identifierstyle={\color{cyan}}"
 inline false
@@ -102,6 +110,69 @@ status open
 \begin_layout Plain Layout
 
 #include "header_files.h" // The next lines create the "#include directive."
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+int main () {
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+type var_name; // variable names should be lowercase and words separated
+ by the underscore.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+return 0;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+// Initial capital letter for types we define to distinguish them from the
+ standard
+\end_layout
+
+\begin_layout Plain Layout
+
+// Library types.
+\end_layout
+
+\begin_layout Plain Layout
+
+class Foo {
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+};
 \end_layout
 
 \end_inset

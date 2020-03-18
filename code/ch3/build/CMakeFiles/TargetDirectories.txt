@@ -1,0 +1,3 @@
+/home/mark/thinkspace/cpp/code/ch3/build/CMakeFiles/rebuild_cache.dir
+/home/mark/thinkspace/cpp/code/ch3/build/CMakeFiles/edit_cache.dir
+/home/mark/thinkspace/cpp/code/ch3/build/CMakeFiles/ch3.exc.dir

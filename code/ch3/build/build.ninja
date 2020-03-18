@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: hello_world
+# Project: ch3
 # Configuration: Debug
 # =============================================================================
 
@@ -34,7 +34,7 @@ include rules.ninja
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/mark/thinkspace/cpp/code/helloworld/build && /usr/local/bin/cmake -S/home/mark/thinkspace/cpp/code/helloworld -B/home/mark/thinkspace/cpp/code/helloworld/build
+  COMMAND = cd /home/mark/thinkspace/cpp/code/ch3/build && /usr/local/bin/cmake -S/home/mark/thinkspace/cpp/code/ch3 -B/home/mark/thinkspace/cpp/code/ch3/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -46,45 +46,45 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/mark/thinkspace/cpp/code/helloworld/build && /usr/local/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/mark/thinkspace/cpp/code/ch3/build && /usr/local/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
 build edit_cache: phony CMakeFiles/edit_cache.util
 
 # =============================================================================
-# Object build statements for EXECUTABLE target hello_world.exc
+# Object build statements for EXECUTABLE target ch3.exc
 
 
 #############################################
-# Order-only phony target for hello_world.exc
+# Order-only phony target for ch3.exc
 
-build cmake_object_order_depends_target_hello_world.exc: phony || CMakeFiles/hello_world.exc.dir
+build cmake_object_order_depends_target_ch3.exc: phony || CMakeFiles/ch3.exc.dir
 
-build CMakeFiles/hello_world.exc.dir/src/main.cpp.o: CXX_COMPILER__hello_world.2eexc ../src/main.cpp || cmake_object_order_depends_target_hello_world.exc
-  DEP_FILE = CMakeFiles/hello_world.exc.dir/src/main.cpp.o.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles/hello_world.exc.dir
-  OBJECT_FILE_DIR = CMakeFiles/hello_world.exc.dir/src
-  TARGET_COMPILE_PDB = CMakeFiles/hello_world.exc.dir/
-  TARGET_PDB = hello_world.exc.pdb
+build CMakeFiles/ch3.exc.dir/src/main.cpp.o: CXX_COMPILER__ch3.2eexc ../src/main.cpp || cmake_object_order_depends_target_ch3.exc
+  DEP_FILE = CMakeFiles/ch3.exc.dir/src/main.cpp.o.d
+  FLAGS = -g   -std=gnu++11
+  OBJECT_DIR = CMakeFiles/ch3.exc.dir
+  OBJECT_FILE_DIR = CMakeFiles/ch3.exc.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/ch3.exc.dir/
+  TARGET_PDB = ch3.exc.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target hello_world.exc
+# Link build statements for EXECUTABLE target ch3.exc
 
 
 #############################################
-# Link the executable hello_world.exc
+# Link the executable ch3.exc
 
-build hello_world.exc: CXX_EXECUTABLE_LINKER__hello_world.2eexc CMakeFiles/hello_world.exc.dir/src/main.cpp.o
+build ch3.exc: CXX_EXECUTABLE_LINKER__ch3.2eexc CMakeFiles/ch3.exc.dir/src/main.cpp.o
   FLAGS = -g
-  OBJECT_DIR = CMakeFiles/hello_world.exc.dir
+  OBJECT_DIR = CMakeFiles/ch3.exc.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/hello_world.exc.dir/
-  TARGET_FILE = hello_world.exc
-  TARGET_PDB = hello_world.exc.pdb
+  TARGET_COMPILE_PDB = CMakeFiles/ch3.exc.dir/
+  TARGET_FILE = ch3.exc
+  TARGET_PDB = ch3.exc.pdb
 
 # =============================================================================
 # Target aliases.
@@ -95,9 +95,9 @@ build hello_world.exc: CXX_EXECUTABLE_LINKER__hello_world.2eexc CMakeFiles/hello
 # =============================================================================
 
 #############################################
-# Folder: /home/mark/thinkspace/cpp/code/helloworld/build
+# Folder: /home/mark/thinkspace/cpp/code/ch3/build
 
-build all: phony hello_world.exc
+build all: phony ch3.exc
 
 # =============================================================================
 # Built-in targets

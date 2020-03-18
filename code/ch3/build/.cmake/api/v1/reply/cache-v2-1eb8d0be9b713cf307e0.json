@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/mark/thinkspace/cpp/code/helloworld/build"
+			"value" : "/home/mark/thinkspace/cpp/code/ch3/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -143,7 +143,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/g++-5"
+			"value" : "/usr/bin/x86_64-linux-gnu-g++-5"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_AR",
@@ -271,7 +271,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-5"
+			"value" : "/usr/bin/x86_64-linux-gnu-gcc-5"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_AR",
@@ -579,7 +579,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/mark/thinkspace/cpp/code/helloworld"
+			"value" : "/home/mark/thinkspace/cpp/code/ch3"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -823,7 +823,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "hello_world"
+			"value" : "ch3"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1106,7 +1106,7 @@
 			"value" : "FALSE"
 		},
 		{
-			"name" : "hello_world_BINARY_DIR",
+			"name" : "ch3_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1115,10 +1115,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/mark/thinkspace/cpp/code/helloworld/build"
+			"value" : "/home/mark/thinkspace/cpp/code/ch3/build"
 		},
 		{
-			"name" : "hello_world_SOURCE_DIR",
+			"name" : "ch3_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1127,7 +1127,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/mark/thinkspace/cpp/code/helloworld"
+			"value" : "/home/mark/thinkspace/cpp/code/ch3"
 		}
 	],
 	"kind" : "cache",

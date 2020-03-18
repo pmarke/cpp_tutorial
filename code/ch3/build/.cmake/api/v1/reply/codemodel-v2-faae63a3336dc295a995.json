@@ -26,7 +26,7 @@
 					[
 						0
 					],
-					"name" : "hello_world",
+					"name" : "ch3",
 					"targetIndexes" : 
 					[
 						0
@@ -37,9 +37,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "hello_world.exc::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-hello_world.exc-Debug-f8f93adf8fd6b6d00ae4.json",
-					"name" : "hello_world.exc",
+					"id" : "ch3.exc::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ch3.exc-Debug-9159dc3630ddb67a8d9b.json",
+					"name" : "ch3.exc",
 					"projectIndex" : 0
 				}
 			]
@@ -48,8 +48,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/mark/thinkspace/cpp/code/helloworld/build",
-		"source" : "/home/mark/thinkspace/cpp/code/helloworld"
+		"build" : "/home/mark/thinkspace/cpp/code/ch3/build",
+		"source" : "/home/mark/thinkspace/cpp/code/ch3"
 	},
 	"version" : 
 	{

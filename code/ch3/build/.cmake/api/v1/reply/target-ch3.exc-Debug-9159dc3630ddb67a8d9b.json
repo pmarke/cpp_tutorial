@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "hello_world.exc"
+			"path" : "ch3.exc"
 		}
 	],
 	"backtrace" : 1,
@@ -24,7 +24,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 4,
+				"line" : 6,
 				"parent" : 0
 			}
 		]
@@ -36,6 +36,9 @@
 			[
 				{
 					"fragment" : "-g  "
+				},
+				{
+					"fragment" : "-std=gnu++11"
 				}
 			],
 			"language" : "CXX",
@@ -45,7 +48,7 @@
 			]
 		}
 	],
-	"id" : "hello_world.exc::@6890427a1f51a3e7e1df",
+	"id" : "ch3.exc::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -61,8 +64,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "hello_world.exc",
-	"nameOnDisk" : "hello_world.exc",
+	"name" : "ch3.exc",
+	"nameOnDisk" : "ch3.exc",
 	"paths" : 
 	{
 		"build" : ".",
