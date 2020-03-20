@@ -86,6 +86,10 @@ A compiler translates source code into object code, and a linker links object
  code into an executable file.
 \end_layout
 
+\begin_layout Standard
+Each function should perform a single logical action.
+\end_layout
+
 \begin_layout Section
 Initialization
 \end_layout
