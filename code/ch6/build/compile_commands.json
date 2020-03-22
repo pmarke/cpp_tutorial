@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/mark/thinkspace/cpp/code/ch6/build",
+  "command": "/usr/bin/x86_64-linux-gnu-g++-5    -g   -std=gnu++11 -o CMakeFiles/ch6.exc.dir/src/main.cpp.o -c /home/mark/thinkspace/cpp/code/ch6/src/main.cpp",
+  "file": "/home/mark/thinkspace/cpp/code/ch6/src/main.cpp"
+}
+]

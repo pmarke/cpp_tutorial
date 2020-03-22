@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mark/thinkspace/cpp/code/ch6/src/main.cpp
+iostream
+-
+string
+-
+vector
+-
+algorithm
+-
+cmath
+-
+math.h
+-
+stdexcept
+-
+

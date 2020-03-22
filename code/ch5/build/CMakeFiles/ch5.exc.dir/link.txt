@@ -1,0 +1,1 @@
+/usr/bin/c++  -O3 -DNDEBUG   CMakeFiles/ch5.exc.dir/src/main.cpp.o  -o ch5.exc 
