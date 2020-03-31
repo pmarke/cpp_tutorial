@@ -47,9 +47,119 @@ double bilinear_operation(double lval, char op, double rval)
     return result;
 }
 
-Token get_token(char input) 
+Token get_token() 
 {
     
+}
+
+double expression() {
+    double left = term();
+    Token t = get_token();
+    while(true) {
+        switch (t.kind)
+        {
+        case '+':
+            left+= term();
+            t = get_token();
+            break;
+        case '-':
+            left-=term();
+            t = get_token();
+            break;
+        default:
+            return left;
+        }
+    }
+}
+
+double term() {
+    double left = primary();
+    Token t = get_token();
+    while(true) {
+        switch (t.kind)
+        {
+        case '*':
+            left*=primary();
+            t=get_token();
+            break;
+        case '/':
+            double d = primary();
+            if (d==0) __throw_domain_error;
+            left/=d;
+            t=get_token();
+            break;
+        // case '%':
+        //     left%=primary();
+        //     t=get_token();
+        //     break;
+        default:
+            return left;
+        }
+    }
+}
+
+double primary() {
+    Token t = get_token();
+    switch(t.kind) {
+        case '(':
+        {
+            double d = expression();
+            t=get_token();
+            if(t.kind != ')') __throw_invalid_argument("no matching right parenthases");
+            return d;
+        }
+        case '8':
+            return t.val;
+        default:
+            throw std::invalid_argument("Primary expected");
+    }
+}
+
+class Token_stream {
+    public:
+        Token get();
+        void putback(Token t);
+
+    private:
+        bool full{false};
+        Token buffer;
+
+};
+
+void Token_stream::putback(Token t) {
+    if (full) throw std::logic_error("buffer is full");
+    buffer = t;
+    full = true;
+}
+
+Token Token_stream::get()
+{
+    if(full){
+        full = false;
+        return buffer;
+    }
+
+    char ch;
+    cin >> ch;
+
+    switch (ch)
+    {
+    case ';':     // for print
+    case 'q':     // for quit
+    case '(': case ')': case '+': case '-': case '*': case '/':
+        return Token{ch};
+    case '.':
+    case '0': case '1': case '2': case '3': case '4': case '5':
+    case '6': case '7': case '8': case '9':
+    {
+        cin.putback(ch);
+        double val;
+        cin >> val;       // read in a floating point number
+        return Token{'8',val};
+    }    
+    default:
+        __throw_invalid_argument("Bad Token");
+    }
 }
 
 int main() {
@@ -57,24 +167,21 @@ int main() {
 char input;  // Operation
 double result=0;
 
-vector<Token> toks;
-
 cout << "Please enter in an expression. (We can handle + and -)"<< endl;
 
-while(cin >> input)
-{
-    toks.push_back(get_token(input));
-}
 
 try {
-    result = bilinear_operation(lval,op,rval);
+    while(cin)
+        cout << expression() << std::endl;
 }
 catch (const exception& e) {
     std::cerr << e.what() << std::endl;
+    return 1;
 }
-
-std::cout << "Result: " << result << std::endl;
-std::cout << "token val: " << t.val << std::endl;
+catch (...){
+    cerr << "exception" << std::endl;
+    return 2;
+}
 
 
 return 0;
